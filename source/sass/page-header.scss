@@ -1,0 +1,177 @@
+.page-header__wapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  vertical-align: baseline;
+  margin: 0 auto;
+  padding: 15px 40px;
+
+  box-sizing: border-box;
+}
+.page-header__logo {
+  margin-right: 22.34%;
+  align-self: center;
+}
+.page-header__phone {
+  margin: 0;
+  padding: 0;
+  margin-right: 8px;
+  align-self: center;
+
+  font-family: "vida33pro";
+  font-size: 18px;
+  line-height: 20px;
+}
+.page-header__phone-img {
+  margin-right: 21px;
+}
+.page-heade__button {
+  width: 32px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/menu-button_mobile.png");
+  background-repeat: no-repeat;
+}
+.page-header__menu-button {
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/close-button_mobile.png");
+  background-repeat: no-repeat;
+}
+.page-header__menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 116px;
+}
+.page-header__phone-img {
+  cursor: pointer;
+}
+.page-header__menu {
+  position: absolute;
+  top: 0;
+
+  display: none;
+  min-width: 100%;
+  padding-top: 23px;
+  padding-bottom: 35px;
+  padding-right: 40px;
+  padding-left: 40px;
+  z-index: 1000;
+
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.page-header__menu.show {
+  display: block;
+}
+.page-header__picture {
+  min-height: 232px;
+  margin-bottom: 50px;
+
+  background-image: url("../img/header-img_mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-header__menu-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 442px;
+
+  list-style: none;
+}
+.page-header__menu-item {
+  margin-bottom: 37px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.page-header__menu-link {
+  font-family: "vida31pro";
+  font-size: 24px;
+  line-height: 20px;
+  color: #893b67;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+.page-header__notification-wrapper {
+  position: relative;
+
+  margin-bottom: 50px;
+}
+.page-header__notification {
+  width: 27px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-right: 21px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/notification-menu_mobile.png");
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+.page-header__notification-link {
+  margin: 0;
+  padding: 0;
+
+  font-family: "vida31pro";
+  font-size: 24px;
+  line-height: 20px;
+  color: #893b67;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+.page-header__notification-quantity {
+  position: absolute;
+  left: 15px;
+  top: -10px;
+
+  width: 22px;
+  min-height: 22px;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  color: #ffffff;
+
+  background: url("../img/notification-quantity_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-header__personal-area {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 57px;
+
+  font-family: "vida31pro";
+  font-size: 24px;
+  line-height: 20px;
+  color: #893b67;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+.page-header__menu-phone {
+  display: flex;
+  justify-content: space-between;
+  width: 455px;
+}
+.page-header__phone--menu {
+  font-size: 40px;
+}
