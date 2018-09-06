@@ -13,17 +13,7 @@
 <body>
   <header class="page-header">
     <div class="page-header__wapper">
-      <img class="page-header__logo" src="img/logo-header_mobile.png" alt="Лого">
-      <p class="page-header__phone">+7 000 000-00-00</p>
-      <img class="page-header__phone-img" src="img/phone_mobile.png" alt="Позвонить">
-      <button class="page-heade__button" type="button"></button>
-    </div>
-    <div class="page-header__picture"></div>
-    <div class="page-header__menu">
-      <div class="page-header__menu-wrapper">
-        <img class="page-header__logo" src="img/logo-header_mobile.png" alt="Лого">
-        <button class="page-header__menu-button" type="button"></button>
-      </div>
+      <img class="page-header__logo" src="img/logo-header_mobile.png" alt="Лого" width="146">
       <ul class="page-header__menu-list">
         <li class="page-header__menu-item">
           <a class="page-header__menu-link" href="#">Раздел №1</a>
@@ -47,23 +37,40 @@
         <p class="page-header__notification-quantity">3</p>
       </div>
       <button class="page-header__personal-area" type="button">Личный кабинет</button>
-      <div class="page-header__menu-phone">
-        <p class="page-header__phone page-header__phone--menu">+7 000 000-00-00</p>
-        <img class="page-header__phone-img" src="img/phone_mobile.png" alt="Позвонить">
+      <div class="page-header__phone-wrapper">
+        <p class="page-header__phone">+7 000 000-00-00</p>
+        <img class="page-header__phone-img" src="img/phone_mobile.png" alt="Позвонить" width="58">
       </div>
+      <button class="page-header__button" type="button"></button>
     </div>
+    <div class="page-header__picture"></div>
   </header>
 
   <main class="page-main">
     <section class="page-main__menu">
       <ul class="page-main__list">
-        <li class="page-main__item">Документы</li>
-        <li class="page-main__item">План</li>
-        <li class="page-main__item">Оплата</li>
-        <li class="page-main__item">Стадии</li>
-        <li class="page-main__item">Online</li>
-        <li class="page-main__item">Инструкция</li>
-        <li class="page-main__item active">Уведомления</li>
+        <li class="page-main__item">
+          <p class="item-caption">Документы</p>
+        </li>
+        <li class="page-main__item">
+          <p class="item-caption">План</p>
+        </li>
+        <li class="page-main__item">
+          <p class="item-caption">Оплата</p>
+        </li>
+        <li class="page-main__item">
+          <p class="item-caption">Стадии</p>
+        </li>
+        <li class="page-main__item">
+          <p class="item-caption">Online</p>
+        </li>
+        <li class="page-main__item">
+          <p class="item-caption">Инструкция</p>
+        </li>
+        <li class="page-main__item active">
+          <p class="item-caption">Уведомления</p>
+          <p class="item-quantity">6</p>
+        </li>
       </ul>
       <ul class="page-main__address-list">
         <li class="page-main__address-item">
@@ -74,11 +81,42 @@
           </div>
         </li>
         <li class="page-main__address-item">
-            <h2 class="address__caption">Адрес 123</h2>
-            <div class="address__wrapper">
-              <p class="address__text">Адрес 123</p>
-              <a class="address__link" href="#">Перейти</a>
-            </div>
+          <h2 class="address__caption">Адрес 123</h2>
+          <div class="address__wrapper">
+            <p class="address__text">Адрес 123</p>
+            <a class="address__link" href="#">Перейти</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="notifications">
+      <h2 class="notifications__caption">Уведомления</h2>
+      <ul class="notifications__list">
+        <li class="notifications__item">
+          <p class="item__date">22/09/17</p>
+          <h3 class="item__subtitle">«Вращательный экваториальный момент — актуальная национальная задача»</h3>
+        </li>
+        <li class="notifications__item active">
+          <p class="item__date">21/09/17</p>
+          <h3 class="item__subtitle">Реальная власть как концепция</h3>
+          <p class="item__text">Современная критика выслеживает апогей. Малое колебание амбивалентно. Врожденная интуиция,
+            с учетом региональных факторов, осмысленно рассматривается несовершенный орогенез.<br> Актуализация аккумулирует
+            трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца подвеса, что
+            не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный голоцен, однако Зигварт
+            считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире.
+            Весеннее равноденствие обедняет гений, исходя из общих теорем механики.<br> Освобождение, несмотря на не менее значительную.</p>
+        </li>
+        <li class="notifications__item">
+          <p class="item__date">11/08/17</p>
+          <h3 class="item__subtitle">Из ряда вон выходящий математический маятник: гипотеза и теории</h3>
+        </li>
+        <li class="notifications__item">
+          <p class="item__date">01/08/17</p>
+          <h3 class="item__subtitle">Межпланетный знак: методология и особенности</h3>
+        </li>
+        <li class="notifications__item">
+          <p class="item__date">24/07/17</p>
+          <h3 class="item__subtitle">Юрский маховик: ядро или засветка неба?</h3>
         </li>
       </ul>
     </section>

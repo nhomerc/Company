@@ -4,6 +4,8 @@
 
   box-sizing: border-box;
 }
+//
+// Выпадающие меню
 .page-main__list {
   position: relative;
 
@@ -35,11 +37,41 @@
     display: block;
   }
 }
+.item-caption {
+  margin: 0;
+  padding: 0;
+
+  font-family: "vida31pro";
+  font-size: 16px;
+  line-height: 24px;
+}
+.item-quantity {
+  position: absolute;
+  top: -40px;
+  left: 130px;
+
+  width: 22px;
+
+  font-family: "vida33pro";
+  font-size: 13px;
+  line-height: 50px;
+  text-align: center;
+
+  color: #ffffff;
+
+  background: url("../img/notification-quantity_mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+//
+// Список адресов
 .page-main__address-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  margin-bottom: 80px;
 
   list-style: none;
 }
@@ -95,3 +127,4 @@
     content: url("../img/icons-right-arrow_mobile.png");
   }
 }
+//

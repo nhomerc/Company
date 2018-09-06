@@ -1,17 +1,33 @@
+// Верхние меню
 .page-header__wapper {
-  position: relative;
-
   display: flex;
   justify-content: space-between;
   vertical-align: baseline;
-  margin: 0 auto;
+  width: 92.19%;
+  margin: 0;
   padding: 15px 40px;
 
   box-sizing: border-box;
+  &.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    vertical-align: auto;
+    padding-top: 24px;
+  }
 }
+// Логотип в шапке
 .page-header__logo {
   margin-right: 22.34%;
   align-self: center;
+  &.open {
+    align-self: auto;
+    margin-bottom: 116px;
+  }
+}
+// Телефон в шапке
+.page-header__phone-wrapper {
+  display: flex;
 }
 .page-header__phone {
   margin: 0;
@@ -22,11 +38,21 @@
   font-family: "vida33pro";
   font-size: 18px;
   line-height: 20px;
+  &.open {
+    font-size: 40px;
+  }
 }
 .page-header__phone-img {
   margin-right: 21px;
+
+  cursor: pointer;
 }
-.page-heade__button {
+// Кнопка меню
+.page-header__button {
+  position: absolute;
+  top: 34px;
+  right: 40px;
+
   width: 32px;
   height: 21px;
   margin: 0;
@@ -37,56 +63,49 @@
   background-color: transparent;
   background-image: url("../img/menu-button_mobile.png");
   background-repeat: no-repeat;
+  &.open {
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/close-button_mobile.png");
+    background-repeat: no-repeat;
+  }
 }
-.page-header__menu-button {
-  width: 32px;
-  height: 32px;
+// Кнопка "Личный кабинет"
+.page-header__personal-area {
+  display: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 57px;
+
+  font-family: "vida31pro";
+  font-size: 24px;
+  line-height: 20px;
+  color: #893b67;
 
   border: none;
   background-color: transparent;
-  background-image: url("../img/close-button_mobile.png");
-  background-repeat: no-repeat;
-}
-.page-header__menu-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 116px;
-}
-.page-header__phone-img {
+
   cursor: pointer;
-}
-.page-header__menu {
-  position: absolute;
-  top: 0;
+  &.open {
+    display: block;
 
-  display: none;
-  min-width: 100%;
-  padding-top: 23px;
-  padding-bottom: 35px;
-  padding-right: 40px;
-  padding-left: 40px;
-  z-index: 1000;
-
-  background-color: #fff;
-  box-sizing: border-box;
+    text-align: left;
+  }
 }
-.page-header__menu.show {
-  display: block;
-}
-.page-header__picture {
-  min-height: 232px;
-  margin-bottom: 50px;
-
-  background-image: url("../img/header-img_mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// Список в выпадающем меню
 .page-header__menu-list {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 442px;
+  display: none;
+  &.show {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 442px;
 
-  list-style: none;
+    list-style: none;
+  }
 }
 .page-header__menu-item {
   margin-bottom: 37px;
@@ -104,10 +123,15 @@
 
   cursor: pointer;
 }
+// Уведомления
 .page-header__notification-wrapper {
   position: relative;
 
+  display: none;
   margin-bottom: 50px;
+  &.open {
+    display: block;
+  }
 }
 .page-header__notification {
   width: 27px;
@@ -138,13 +162,15 @@
 .page-header__notification-quantity {
   position: absolute;
   left: 15px;
-  top: -10px;
+  top: -30px;
 
   width: 22px;
-  min-height: 22px;
   margin: 0;
   padding: 0;
 
+  font-family: "vida33pro";
+  font-size: 13px;
+  line-height: 50px;
   text-align: center;
   color: #ffffff;
 
@@ -152,26 +178,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.page-header__personal-area {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 57px;
+// Основная картинка
+.page-header__picture {
+  min-height: 232px;
+  margin-bottom: 50px;
 
-  font-family: "vida31pro";
-  font-size: 24px;
-  line-height: 20px;
-  color: #893b67;
+  background-image: url("../img/header-img_mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  border: none;
-  background-color: transparent;
 
-  cursor: pointer;
-}
-.page-header__menu-phone {
-  display: flex;
-  justify-content: space-between;
-  width: 455px;
-}
-.page-header__phone--menu {
-  font-size: 40px;
-}
+
