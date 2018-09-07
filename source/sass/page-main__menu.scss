@@ -22,9 +22,9 @@
   box-sizing: border-box;
   &::after {
     position: absolute;
-    top: 50%;
+    top: 60%;
     right: 24px;
-    transform: translateY(-60%);
+    transform: translateY(-50%);
 
     content: url("../img/menu-arrow_mobile.png");
 
@@ -123,6 +123,7 @@
   &::after {
     position: absolute;
     left: 110%;
+    top: 3px;
 
     content: url("../img/icons-right-arrow_mobile.png");
   }

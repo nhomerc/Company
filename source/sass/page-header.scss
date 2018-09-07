@@ -1,5 +1,7 @@
 // Верхние меню
 .page-header__wapper {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   vertical-align: baseline;
@@ -39,6 +41,8 @@
   font-size: 18px;
   line-height: 20px;
   &.open {
+    margin-right: 44px;
+
     font-size: 40px;
   }
 }
@@ -51,7 +55,7 @@
 .page-header__button {
   position: absolute;
   top: 34px;
-  right: 40px;
+  right: 0;
 
   width: 32px;
   height: 21px;
