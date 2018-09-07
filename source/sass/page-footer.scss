@@ -1,0 +1,91 @@
+.page-footer {
+  margin: 0;
+  padding: 0 40px;
+  padding-top: 39px;
+  padding-bottom: 50px;
+}
+//Список социальных сетей
+.page-footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 172px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+
+  list-style: none;
+}
+//Телефон
+.page-footer__addres-phone {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  font-family: "vida33pro";
+  font-size: 24px;
+  line-height: 18px;
+}
+//Адрес
+.page-footer__addres-street {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  font-family: "vida31pro";
+  font-size: 14px;
+  line-height: 18px;
+}
+//Почта
+.page-footer__addres-mail {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+
+  font-family: "vida31pro";
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #893b67;
+}
+//Список разделов
+.page-footer__section-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.page-footer__section-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+
+  border-bottom: 1px solid #edeeee;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.section-item__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+
+  font-family: "vida33pro";
+  font-size: 14px;
+  line-height: 24px;
+}
+.section-item__button {
+  width: 16px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/footer-section_mobile.png");
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}

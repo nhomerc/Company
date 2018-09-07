@@ -1,0 +1,119 @@
+.event {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 19px;
+  padding-left: 41px;
+  padding-right: 40px;
+
+  background-color: #edeeee;
+}
+// Список новостей
+.event__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+.event__item {
+  display: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 17px;
+
+  &.active {
+    display: block;
+  }
+}
+.event__date-wrapper {
+  display: flex;
+  vertical-align: baseline;
+  margin-bottom: 16px;
+}
+.event__date {
+  margin: 0;
+  padding: 0;
+  margin-right: 8px;
+
+  font-family: "vida31pro";
+  font-size: 14px;
+}
+.event__subtitle {
+  display: block;
+  margin: 0;
+  padding: 0 8px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+
+  font-family: "vida31pro";
+  font-size: 10px;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  &.stock {
+    position: relative;
+
+    margin-left: 10px;
+
+    font-family: "vida33pro";
+
+    background-color: #c5e71b;
+    &::before {
+      position: absolute;
+      right: 100%;
+      top: 0;
+
+      width: 5px;
+      height: 16px;
+
+      content: "";
+      background-image: url("../img/stock-before_mobile.png");
+      background-repeat: no-repeat;
+    }
+    &::after {
+      position: absolute;
+      left: 100%;
+      top: 0;
+
+      width: 5px;
+      height: 16px;
+
+      content: "";
+      background-image: url("../img/stock-after_mobile.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+.event__text {
+  margin: 0;
+  padding: 0;
+
+  font-family: "vida31pro";
+  font-size: 21.84px;
+  line-height: 28.08px;
+}
+// Переключатель новостей
+.event__toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 75px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+.event__toggle-button {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+  &.active {
+    opacity: 0.2;
+  }
+}

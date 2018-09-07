@@ -345,22 +345,11 @@ img {
   border-radius: 20px; }
   .notifications__item:last-child {
     margin-bottom: 0; }
-  .notifications__item::after {
-    position: absolute;
-    top: 46px;
-    right: 24px;
-    content: url("../img/arrow-down_mobile.png");
-    cursor: pointer; }
-  .notifications__item.active {
-    background-color: #fcfcfc; }
-    .notifications__item.active::after {
-      content: url("../img/arrow-up_mobile.png"); }
 
 .item__date {
   width: 77px;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
   font-family: "vida31pro";
   font-size: 16px;
   line-height: 20px;
@@ -375,6 +364,20 @@ img {
   font-size: 18px;
   line-height: 26px; }
 
+.item__button {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/arrow-down_mobile.png");
+  cursor: pointer; }
+  .item__button.open {
+    background-image: url("../img/arrow-up_mobile.png"); }
+
 .item__text {
   width: 90%;
   margin: 0;
@@ -383,3 +386,193 @@ img {
   font-family: "vida31pro";
   font-size: 16px;
   line-height: 24px; }
+
+.event {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 19px;
+  padding-left: 41px;
+  padding-right: 40px;
+  background-color: #edeeee; }
+
+.event__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none; }
+
+.event__item {
+  display: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 17px; }
+  .event__item.active {
+    display: block; }
+
+.event__date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: baseline;
+  margin-bottom: 16px; }
+
+.event__date {
+  margin: 0;
+  padding: 0;
+  margin-right: 8px;
+  font-family: "vida31pro";
+  font-size: 14px; }
+
+.event__subtitle {
+  display: block;
+  margin: 0;
+  padding: 0 8px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  font-family: "vida31pro";
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: #ffffff; }
+  .event__subtitle.stock {
+    position: relative;
+    margin-left: 10px;
+    font-family: "vida33pro";
+    background-color: #c5e71b; }
+    .event__subtitle.stock::before {
+      position: absolute;
+      right: 100%;
+      top: 0;
+      width: 5px;
+      height: 16px;
+      content: "";
+      background-image: url("../img/stock-before_mobile.png");
+      background-repeat: no-repeat; }
+    .event__subtitle.stock::after {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 5px;
+      height: 16px;
+      content: "";
+      background-image: url("../img/stock-after_mobile.png");
+      background-repeat: no-repeat; }
+
+.event__text {
+  margin: 0;
+  padding: 0;
+  font-family: "vida31pro";
+  font-size: 21.84px;
+  line-height: 28.08px; }
+
+.event__toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none; }
+
+.event__toggle-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer; }
+  .event__toggle-button.active {
+    opacity: 0.2; }
+
+.page-footer {
+  margin: 0;
+  padding: 0 40px;
+  padding-top: 39px;
+  padding-bottom: 50px; }
+
+.page-footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 172px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+  list-style: none; }
+
+.page-footer__addres-phone {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-family: "vida33pro";
+  font-size: 24px;
+  line-height: 18px; }
+
+.page-footer__addres-street {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-family: "vida31pro";
+  font-size: 14px;
+  line-height: 18px; }
+
+.page-footer__addres-mail {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  font-family: "vida31pro";
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #893b67; }
+
+.page-footer__section-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.page-footer__section-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #edeeee; }
+  .page-footer__section-item:last-child {
+    margin-bottom: 0; }
+
+.section-item__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+  font-family: "vida33pro";
+  font-size: 14px;
+  line-height: 24px; }
+
+.section-item__button {
+  width: 16px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/footer-section_mobile.png");
+  background-repeat: no-repeat;
+  cursor: pointer; }

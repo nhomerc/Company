@@ -33,28 +33,12 @@
   &:last-child {
     margin-bottom: 0;
   }
-  &::after {
-    position: absolute;
-    top: 46px;
-    right: 24px;
-
-    content: url("../img/arrow-down_mobile.png");
-
-    cursor: pointer;
-  }
-  &.active {
-    background-color: #fcfcfc;
-    &::after {
-      content: url("../img/arrow-up_mobile.png");
-    }
-  }
 }
 // Дата новости
 .item__date {
   width: 77px;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
 
   font-family: "vida31pro";
   font-size: 16px;
@@ -72,6 +56,24 @@
   font-family: "vida33pro";
   font-size: 18px;
   line-height: 26px;
+}
+// Кнопка развернуть
+.item__button {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/arrow-down_mobile.png");
+
+  cursor: pointer;
+  &.open {
+    background-image: url("../img/arrow-up_mobile.png");
+  }
 }
 // Текст новости
 .item__text {
