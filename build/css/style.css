@@ -43,7 +43,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   vertical-align: baseline;
-  width: 92.19%;
+  width: 95%;
   margin: 0;
   padding: 15px 40px;
   -webkit-box-sizing: border-box;
@@ -96,7 +96,7 @@ img {
 .page-header__button {
   position: absolute;
   top: 34px;
-  right: 0;
+  right: 7px;
   width: 32px;
   height: 21px;
   margin: 0;
@@ -119,7 +119,7 @@ img {
   display: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 57px;
+  margin-bottom: 65px;
   font-family: "vida31pro";
   font-size: 24px;
   line-height: 20px;
@@ -137,7 +137,7 @@ img {
     display: block;
     margin: 0;
     padding: 0;
-    margin-bottom: 442px;
+    margin-bottom: 447px;
     list-style: none; }
 
 .page-header__menu-item {
@@ -156,7 +156,7 @@ img {
 .page-header__notification-wrapper {
   position: relative;
   display: none;
-  margin-bottom: 50px; }
+  margin-bottom: 45px; }
   .page-header__notification-wrapper.open {
     display: block; }
 
@@ -165,7 +165,7 @@ img {
   height: 20px;
   margin: 0;
   padding: 0;
-  margin-right: 21px;
+  margin-right: 15px;
   border: none;
   background-color: transparent;
   background-image: url("../img/notification-menu_mobile.png");
@@ -200,10 +200,51 @@ img {
 
 .page-header__picture {
   min-height: 232px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   background-image: url("../img/header-img_mobile.png");
   background-repeat: no-repeat;
   background-size: cover; }
+
+@media (min-width: 768px) {
+  .page-header__menu-list.show {
+    margin-bottom: 190px; }
+  .page-header__menu-item {
+    margin-bottom: 40px; }
+  .page-header__phone-wrapper.open {
+    margin-bottom: 37px; }
+  .page-header__picture {
+    position: relative;
+    background-image: url("../img/header-img_tablet.png"); }
+  .page-header__logo {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    padding-top: 10px; }
+    .page-header__logo.open {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      padding-top: 1px;
+      margin-bottom: 116px; }
+  .page-header__picture-addres.hidden {
+    position: absolute;
+    left: 40px;
+    bottom: 14%;
+    display: block;
+    margin: 0;
+    padding: 10px 26px;
+    font-family: "vida33pro";
+    font-size: 18px;
+    color: #7f8387;
+    background-color: #ffffff; }
+  .page-header__picture-object.hidden {
+    position: absolute;
+    left: 40px;
+    bottom: -6%;
+    display: block;
+    margin: 0;
+    padding: 10px 26px;
+    font-family: "vida33pro";
+    font-size: 31px;
+    background-color: #ffffff; } }
 
 .page-main__menu {
   margin: 0 auto;
@@ -214,21 +255,21 @@ img {
 .page-main__list {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 0;
   padding-left: 31px;
   padding-top: 12px;
-  padding-bottom: 13px;
+  padding-bottom: 10px;
   border: 1px solid #ddddde;
   border-radius: 22px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .page-main__list::after {
     position: absolute;
-    top: 60%;
+    top: 50%;
     right: 24px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
     content: url("../img/menu-arrow_mobile.png");
     cursor: pointer; }
 
@@ -241,13 +282,12 @@ img {
   margin: 0;
   padding: 0;
   font-family: "vida31pro";
-  font-size: 16px;
-  line-height: 24px; }
+  font-size: 16px; }
 
 .item-quantity {
   position: absolute;
-  top: -40px;
-  left: 130px;
+  top: -33px;
+  left: 133px;
   width: 22px;
   font-family: "vida33pro";
   font-size: 13px;
@@ -268,18 +308,21 @@ img {
           justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 75px;
   list-style: none; }
 
 .page-main__address-item {
+  min-width: 283px;
   width: 50%;
   margin: 0;
   padding: 0;
   padding-left: 38px;
-  padding-right: 30px; }
+  padding-right: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .page-main__address-item:first-child {
     padding-left: 0;
-    padding-right: 54px;
+    padding-right: 55px;
     border-right: 1px solid #ddddde; }
 
 .address__caption {
@@ -316,9 +359,15 @@ img {
   text-decoration: none; }
   .address__link::after {
     position: absolute;
-    left: 110%;
+    left: 120%;
     top: 3px;
     content: url("../img/icons-right-arrow_mobile.png"); }
+
+@media (min-width: 768px) {
+  .item-quantity {
+    left: 125px; }
+  .page-main__address-item:first-child {
+    padding-right: 70px; } }
 
 .notifications {
   margin: 0;
@@ -329,23 +378,24 @@ img {
 .notifications__caption {
   margin: 0;
   padding: 0;
-  margin-bottom: 42px;
+  margin-bottom: 35px;
   font-family: "vida33pro";
   font-size: 34px; }
 
 .notifications__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
   list-style: none; }
 
 .notifications__item {
   position: relative;
   margin: 0;
   padding: 24px;
+  padding-bottom: 18px;
   margin-bottom: 32px;
   border: 1px solid #edeeee;
-  border-radius: 20px; }
+  border-radius: 10px; }
   .notifications__item:last-child {
     margin-bottom: 0; }
 
@@ -385,14 +435,22 @@ img {
   width: 90%;
   margin: 0;
   padding: 0;
-  margin-top: 18px;
   font-family: "vida31pro";
   font-size: 16px;
   line-height: 24px; }
 
+@media (min-width: 768px) {
+  .item__text {
+    margin-top: 5px; }
+    .item__text .br__tablet {
+      display: none; }
+  .notifications__list {
+    margin-bottom: 80px; } }
+
 .event {
   margin: 0;
   padding: 0;
+  padding-top: 29px;
   padding-bottom: 19px;
   padding-left: 41px;
   padding-right: 40px;
@@ -412,9 +470,7 @@ img {
 .event__item {
   display: none;
   margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 17px; }
+  padding: 0; }
   .event__item.active {
     display: block; }
 
@@ -423,12 +479,12 @@ img {
   display: -ms-flexbox;
   display: flex;
   vertical-align: baseline;
-  margin-bottom: 16px; }
+  margin-bottom: 13px; }
 
 .event__date {
   margin: 0;
   padding: 0;
-  margin-right: 8px;
+  margin-right: 3px;
   font-family: "vida31pro";
   font-size: 14px;
   color: #a5a6a6; }
@@ -470,6 +526,7 @@ img {
 .event__text {
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
   font-family: "vida31pro";
   font-size: 21.84px;
   line-height: 28.08px; }
@@ -495,10 +552,27 @@ img {
   .event__toggle-button.active {
     opacity: 0.2; }
 
+@media (min-width: 768px) {
+  .event {
+    padding-left: 55px;
+    padding-right: 0; }
+  .event__list {
+    margin-bottom: 15px;
+    overflow: hidden; }
+  .event__item {
+    display: block;
+    min-width: 33%;
+    margin-right: 63px; }
+  .event__text {
+    font-size: 14px;
+    line-height: 18px; }
+  .event__toggle {
+    display: none; } }
+
 .page-footer {
   margin: 0;
   padding: 0 40px;
-  padding-top: 39px;
+  padding-top: 35px;
   padding-bottom: 50px; }
 
 .page-footer__social-list {
@@ -513,6 +587,9 @@ img {
   padding: 0;
   margin-bottom: 28px;
   list-style: none; }
+
+.page-footer__addres-wrapper {
+  margin-bottom: 30px; }
 
 .page-footer__addres-phone {
   margin: 0;
@@ -533,7 +610,6 @@ img {
 .page-footer__addres-mail {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
   font-family: "vida31pro";
   font-size: 16px;
   line-height: 18px;
@@ -557,10 +633,11 @@ img {
           align-items: baseline;
   margin: 0;
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   border-bottom: 1px solid #edeeee; }
   .page-footer__section-item:last-child {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    border: none; }
 
 .section-item__text {
   margin: 0;
@@ -580,3 +657,63 @@ img {
   background-image: url("../img/footer-section_mobile.png");
   background-repeat: no-repeat;
   cursor: pointer; }
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 35px;
+    padding-left: 37px; }
+  .page-footer__data-wrapper {
+    width: 48%;
+    padding-top: 10px; }
+  .page-footer__section-wrapper {
+    width: 42%;
+    margin-left: 7px; }
+  .section-item__text {
+    padding-bottom: 10px; }
+  .page-footer__section-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .page-footer__section-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100px;
+    border: none; }
+  .section__subclass-list.hidden {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .section__subclass-list.hidden:last-child {
+    padding-top: 35px; }
+  .section__subclass-item:last-child {
+    margin-bottom: 30px; }
+  .section__subclass-link {
+    margin: 0;
+    padding: 0;
+    font-family: "vida31pro";
+    font-size: 14px;
+    line-height: 24px;
+    color: #893b67;
+    cursor: pointer; }
+  .section-item__button {
+    display: none; } }

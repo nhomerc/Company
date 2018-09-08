@@ -1,6 +1,7 @@
 .event {
   margin: 0;
   padding: 0;
+  padding-top: 29px;
   padding-bottom: 19px;
   padding-left: 41px;
   padding-right: 40px;
@@ -21,8 +22,6 @@
   display: none;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 17px;
 
   &.active {
     display: block;
@@ -31,12 +30,12 @@
 .event__date-wrapper {
   display: flex;
   vertical-align: baseline;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 .event__date {
   margin: 0;
   padding: 0;
-  margin-right: 8px;
+  margin-right: 3px;
 
   font-family: "vida31pro";
   font-size: 14px;
@@ -91,6 +90,7 @@
 .event__text {
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
 
   font-family: "vida31pro";
   font-size: 21.84px;
@@ -116,5 +116,28 @@
   cursor: pointer;
   &.active {
     opacity: 0.2;
+  }
+}
+@media (min-width: 768px) {
+  .event {
+    padding-left: 55px;
+    padding-right: 0;
+  }
+  .event__list {
+    margin-bottom: 15px;
+
+    overflow: hidden;
+  }
+  .event__item {
+    display: block;
+    min-width: 33%;
+    margin-right: 63px;
+  }
+  .event__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .event__toggle {
+    display: none;
   }
 }

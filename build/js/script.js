@@ -5,6 +5,7 @@ var logo = document.querySelector(".page-header__logo");
 var notice = document.querySelector(".page-header__notification-wrapper");
 var perconalRoom = document.querySelector(".page-header__personal-area");
 var phoneNumber = document.querySelector(".page-header__phone");
+var phoneWrapper = document.querySelector(".page-header__phone-wrapper");
 
 headerMobile.classList.remove("show");
 mainMenu.classList.remove("show");
@@ -19,6 +20,7 @@ showHideButton.addEventListener("click", function(evt) {
   notice.classList.toggle("open");
   perconalRoom.classList.toggle("open");
   phoneNumber.classList.toggle("open");
+  phoneWrapper.classList.toggle("open");
 })
 
 

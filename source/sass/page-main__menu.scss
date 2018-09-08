@@ -10,11 +10,11 @@
   position: relative;
 
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 0;
   padding-left: 31px;
   padding-top: 12px;
-  padding-bottom: 13px;
+  padding-bottom: 10px;
 
   border: 1px solid #ddddde;
   border-radius: 22px;
@@ -22,9 +22,9 @@
   box-sizing: border-box;
   &::after {
     position: absolute;
-    top: 60%;
+    top: 50%;
     right: 24px;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
 
     content: url("../img/menu-arrow_mobile.png");
 
@@ -43,12 +43,11 @@
 
   font-family: "vida31pro";
   font-size: 16px;
-  line-height: 24px;
 }
 .item-quantity {
   position: absolute;
-  top: -40px;
-  left: 130px;
+  top: -33px;
+  left: 133px;
 
   width: 22px;
 
@@ -71,19 +70,22 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 75px;
 
   list-style: none;
 }
 .page-main__address-item {
+  min-width: 283px;
   width: 50%;
   margin: 0;
   padding: 0;
   padding-left: 38px;
-  padding-right: 30px;
+  padding-right: 35px;
+
+  box-sizing: border-box;
   &:first-child{
     padding-left: 0;
-    padding-right: 54px;
+    padding-right: 55px;
 
     border-right: 1px solid #ddddde;
   }
@@ -122,10 +124,18 @@
   text-decoration: none;
   &::after {
     position: absolute;
-    left: 110%;
+    left: 120%;
     top: 3px;
 
     content: url("../img/icons-right-arrow_mobile.png");
   }
 }
 //
+@media (min-width: 768px) {
+  .item-quantity {
+    left: 125px;
+  }
+  .page-main__address-item:first-child {
+    padding-right: 70px;
+  }
+}

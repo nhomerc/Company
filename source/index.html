@@ -43,7 +43,10 @@
       </div>
       <button class="page-header__button" type="button"></button>
     </div>
-    <div class="page-header__picture"></div>
+    <div class="page-header__picture">
+      <p class="page-header__picture-addres hidden">Адрес 123</p>
+      <p class="page-header__picture-object hidden">Объект №51</p>
+    </div>
   </header>
 
   <main class="page-main">
@@ -106,8 +109,8 @@
             трагический гений. Параметр Родинга-Гамильтона не зависит от скорости вращения внутреннего кольца подвеса, что
             не кажется странным, если вспомнить о том, что мы не исключили из рассмотрения центральный голоцен, однако Зигварт
             считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире.
-            Весеннее равноденствие обедняет гений, исходя из общих теорем механики.<br> Освобождение, несмотря на не менее
-            значительную.
+            Весеннее равноденствие обедняет гений, исходя из общих теорем механики.<br class="br__tablet"> Освобождение,
+            несмотря на не менее значительную.
           </p>
         </li>
         <li class="notifications__item">
@@ -205,52 +208,125 @@
   </main>
 
   <footer class="page-footer">
-    <ul class="page-footer__social-list">
-      <li class="page-footer__social-item">
-        <a class="social__item-link" href="#">
-          <img class="social__item-img" src="img/ff_mobile.png" alt="Фейсбук">
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="social__item-link" href="#">
-          <img class="social__item-img" src="img/vk_mobile.png" alt="Вконтакте">
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="social__item-link" href="#">
-          <img class="social__item-img" src="img/insta_mobile.png" alt="Инстаграмм">
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="social__item-link" href="#">
-          <img class="social__item-img" src="img/ok_mobile.png" alt="Одноклассники">
-        </a>
-      </li>
-      <li class="page-footer__social-item">
-        <a class="social__item-link" href="#">
-          <img class="social__item-img" src="img/yt_mobile.png" alt="Youtube">
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__addres-wrapper">
-      <p class="page-footer__addres-phone">+7 000 000-00-00</p>
-      <p class="page-footer__addres-street">Адрес, улица, дом, корпус</p>
-      <a class="page-footer__addres-mail" href="mailto:post@comp.com">post@comp.com</p>
+    <div class="page-footer__data-wrapper">
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="social__item-link" href="#">
+            <img class="social__item-img" src="img/ff_mobile.png" alt="Фейсбук">
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="social__item-link" href="#">
+            <img class="social__item-img" src="img/vk_mobile.png" alt="Вконтакте">
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="social__item-link" href="#">
+            <img class="social__item-img" src="img/insta_mobile.png" alt="Инстаграмм">
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="social__item-link" href="#">
+            <img class="social__item-img" src="img/ok_mobile.png" alt="Одноклассники">
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="social__item-link" href="#">
+            <img class="social__item-img" src="img/yt_mobile.png" alt="Youtube">
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__addres-wrapper">
+        <p class="page-footer__addres-phone">+7 000 000-00-00</p>
+        <p class="page-footer__addres-street">Адрес, улица, дом, корпус</p>
+        <a class="page-footer__addres-mail" href="mailto:post@comp.com">post@comp.com</p>
+      </div>
     </div>
-    <ul class="page-footer__section-list">
-      <li class="page-footer__section-item">
-        <p class="section-item__text">Раздел №1</p>
-        <button class="section-item__button" type="button"></button>
-      </li>
-      <li class="page-footer__section-item">
-        <p class="section-item__text">Раздел №1</p>
-        <button class="section-item__button" type="button"></button>
-      </li>
-      <li class="page-footer__section-item">
-        <p class="section-item__text">Раздел №1</p>
-        <button class="section-item__button" type="button"></button>
-      </li>
-    </ul>
+    <div class="page-footer__section-wrapper">
+      <ul class="page-footer__section-list">
+        <li class="page-footer__section-item">
+          <p class="section-item__text">Раздел №1</p>
+          <ul class="section__subclass-list hidden">
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №1</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №2</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №3</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №4</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №5</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №6</a>
+            </li>
+          </ul>
+          <button class="section-item__button" type="button"></button>
+        </li>
+        <li class="page-footer__section-item">
+          <p class="section-item__text">Раздел №2</p>
+          <ul class="section__subclass-list hidden">
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №1</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №2</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №3</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №4</a>
+            </li>
+
+          </ul>
+          <button class="section-item__button" type="button"></button>
+        </li>
+        <li class="page-footer__section-item">
+          <p class="section-item__text">Раздел №3</p>
+          <ul class="section__subclass-list hidden">
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №1</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №2</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №3</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №4</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №5</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №6</a>
+            </li>
+          </ul>
+          <button class="section-item__button" type="button"></button>
+        </li>
+        <li class="page-footer__section-item hidden">
+          <ul class="section__subclass-list hidden">
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №1</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №2</a>
+            </li>
+            <li class="section__subclass-item">
+              <a class="section__subclass-link">Подраздел №3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
   </footer>
 </body>
 <script src="js/script.min.js"></script>

@@ -8,7 +8,7 @@
 .notifications__caption {
   margin: 0;
   padding: 0;
-  margin-bottom: 42px;
+  margin-bottom: 35px;
 
   font-family: "vida33pro";
   font-size: 34px;
@@ -17,7 +17,7 @@
 .notifications__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 
   list-style: none;
 }
@@ -26,10 +26,11 @@
 
   margin: 0;
   padding: 24px;
+  padding-bottom: 18px;
   margin-bottom: 32px;
 
   border: 1px solid #edeeee;
-  border-radius: 20px;
+  border-radius: 10px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -80,9 +81,19 @@
   width: 90%;
   margin: 0;
   padding: 0;
-  margin-top: 18px;
 
   font-family: "vida31pro";
   font-size: 16px;
   line-height: 24px;
+}
+@media (min-width: 768px) {
+  .item__text {
+    margin-top: 5px;
+    & .br__tablet {
+      display: none;
+    }
+  }
+  .notifications__list  {
+    margin-bottom: 80px;
+  }
 }
