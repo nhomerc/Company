@@ -249,4 +249,130 @@
     background-color: #ffffff;
   }
 }
+@media (min-width: 1280px) {
+  .page-header__wapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+  }
+  .page-header__logo {
+    margin-right: 40px;
+  }
+  .page-header__menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 32.2%;
+    margin: 0;
+    padding: 0;
+    margin-right: 218px;
+    padding-top: 5px;
 
+    list-style: none;
+  }
+  .page-header__menu-item {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .page-header__menu-link {
+    font-size: 14px;
+  }
+  .page-header__notification-wrapper {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 25px;
+    padding-top: 10px;
+  }
+  .page-header__notification {
+    width: 18px;
+    height: 12px;
+    margin-right: 10px;
+
+    align-self: center;
+    background-image: url("../img/notification-menu_table.png");
+  }
+  .page-header__notification-link {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  .page-header__notification-quantity {
+    left: 5px;
+    top: -15px;
+
+    font-size: 11px;
+
+    background: url("../img/notification-quantity_table.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .page-header__personal-area {
+    position: relative;
+
+    display: block;
+    align-self: center;
+    margin: 0;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    padding-left: 16px;
+    padding-right: 31px;
+    margin-right: 23px;
+    margin-top: 7px;
+
+
+    font-size: 14px;
+    line-height: normal;
+    color: #000000;
+
+    border: 1px solid #ddddde;
+    border-radius: 27px;
+    &::after {
+      position: absolute;
+      top: 13px;
+      right: 10px;
+
+      width: 8px;
+      height: 6px;
+
+      content: "";
+      background-image: url("../img/personal-arrow-down.png");
+      background-repeat: no-repeat;
+    }
+  }
+  .page-header__phone-img {
+    margin: 0;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+  .page-header__picture {
+    background-image: url("../img/header-img_table.png");
+  }
+  .page-header__picture-addres.hidden {
+    bottom: 21%;
+    left: 93px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-header__picture-object.hidden {
+    left: 93px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+
+    text-align: center;
+    font-size: 50px;
+  }
+}

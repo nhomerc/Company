@@ -97,3 +97,33 @@
     margin-bottom: 80px;
   }
 }
+@media (min-width: 1200px) {
+  .notifications {
+    padding-top: 5px;
+    padding-left: 36px;
+    padding-right: 0;
+  }
+  .notifications__list {
+    margin-bottom: 60px;
+  }
+  .notifications__caption {
+    margin-bottom: 40px;
+  }
+  .notifications__item {
+    margin-bottom: 27px;
+    padding-bottom: 20px;
+    &:first-child {
+      margin-bottom: 23px;
+      padding-bottom: 40px;
+    }
+    &.active {
+      padding-bottom: 30px;
+      margin-bottom: 22px;
+    }
+  }
+  .item__text {
+    & .br__tablet {
+      display: inline;
+    }
+  }
+}
