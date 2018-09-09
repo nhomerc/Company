@@ -141,3 +141,20 @@
     display: none;
   }
 }
+@media (min-width: 1440px) {
+  .event {
+    padding-top: 30px;
+    padding-bottom: 36px;
+    padding-left: 155px;
+    padding-right: 150px;
+  }
+  .event__list {
+    margin-bottom: 0;
+  }
+  .event__item {
+    min-width: 19.91%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
