@@ -26,13 +26,17 @@ img {
 
 @font-face {
   font-family: "vida31pro";
-  src: url("../fonts/vida31pro.otf");
-  font-style: normal; }
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/vida31pro.otf"); }
 
 @font-face {
   font-family: "vida33pro";
-  src: url("../fonts/vida33pro.otf");
-  font-style: normal; }
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/vida33pro.otf"); }
 
 .page-header__wapper {
   position: relative;
@@ -82,7 +86,7 @@ img {
   margin-right: 8px;
   -ms-flex-item-align: center;
       align-self: center;
-  font-family: "vida33pro";
+  font-family: "vida33pro", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 20px; }
   .page-header__phone.open {
@@ -120,7 +124,7 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 65px;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 20px;
   color: #893b67;
@@ -146,7 +150,7 @@ img {
     margin-bottom: 0; }
 
 .page-header__menu-link {
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 20px;
   color: #893b67;
@@ -175,7 +179,7 @@ img {
 .page-header__notification-link {
   margin: 0;
   padding: 0;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 20px;
   color: #893b67;
@@ -189,7 +193,7 @@ img {
   width: 22px;
   margin: 0;
   padding: 0;
-  font-family: "vida33pro";
+  font-family: "vida33pro", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 50px;
   text-align: center;
@@ -231,7 +235,7 @@ img {
     display: block;
     margin: 0;
     padding: 10px 26px;
-    font-family: "vida33pro";
+    font-family: "vida33pro", Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #7f8387;
     background-color: #ffffff; }
@@ -242,7 +246,7 @@ img {
     display: block;
     margin: 0;
     padding: 10px 26px;
-    font-family: "vida33pro";
+    font-family: "vida33pro", Arial, Helvetica, sans-serif;
     font-size: 31px;
     background-color: #ffffff; } }
 
@@ -398,7 +402,7 @@ img {
 .item-caption {
   margin: 0;
   padding: 0;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 16px; }
 
 .item-quantity {
@@ -406,7 +410,7 @@ img {
   top: -33px;
   left: 133px;
   width: 22px;
-  font-family: "vida33pro";
+  font-family: "vida33pro", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 50px;
   text-align: center;
@@ -446,7 +450,7 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 12px;
-  font-family: "vida33pro";
+  font-family: "vida33pro", Arial, Helvetica, sans-serif;
   font-size: 24px;
   color: #893b67; }
 
@@ -461,7 +465,7 @@ img {
 .address__text {
   margin: 0;
   padding: 0;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px; }
 
@@ -469,7 +473,7 @@ img {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: "vida33pro";
+  font-family: "vida33pro", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #893b67;
@@ -572,7 +576,7 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
-  font-family: "vida33pro";
+  font-family: "vida33pro", Arial, Helvetica, sans-serif;
   font-size: 34px; }
 
 .notifications__list {
@@ -596,7 +600,7 @@ img {
   width: 77px;
   margin: 0;
   padding: 0;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -606,7 +610,7 @@ img {
   width: 86%;
   margin: 0;
   padding: 0;
-  font-family: "vida33pro";
+  font-family: "vida33pro", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 26px; }
 
@@ -628,7 +632,7 @@ img {
   width: 90%;
   margin: 0;
   padding: 0;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px; }
 
@@ -699,7 +703,7 @@ img {
   margin: 0;
   padding: 0;
   margin-right: 3px;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #a5a6a6; }
 
@@ -709,14 +713,14 @@ img {
   padding: 0 8px;
   padding-top: 3px;
   padding-bottom: 2px;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 10px;
   text-transform: uppercase;
   background-color: #ffffff; }
   .event__subtitle.stock {
     position: relative;
     margin-left: 10px;
-    font-family: "vida33pro";
+    font-family: "vida33pro", Arial, Helvetica, sans-serif;
     background-color: #c5e71b; }
     .event__subtitle.stock::before {
       position: absolute;
@@ -741,7 +745,7 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 8px;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 21.84px;
   line-height: 28.08px; }
 
@@ -822,7 +826,7 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  font-family: "vida33pro";
+  font-family: "vida33pro", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 18px; }
 
@@ -830,14 +834,14 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px; }
 
 .page-footer__addres-mail {
   margin: 0;
   padding: 0;
-  font-family: "vida31pro";
+  font-family: "vida31pro", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
@@ -870,7 +874,7 @@ img {
   margin: 0;
   padding: 0;
   padding-bottom: 16px;
-  font-family: "vida33pro";
+  font-family: "vida33pro", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px; }
 
@@ -937,7 +941,7 @@ img {
   .section__subclass-link {
     margin: 0;
     padding: 0;
-    font-family: "vida31pro";
+    font-family: "vida31pro", Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #893b67;
